@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DoceSabor — Bolos artesanais</title>
+  <meta name="description" content="DoceSabor — bolos caseiros e encomendas para festas, aniversários e eventos." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">DoceSabor</a>
+      <nav class="main-nav">
+        <a href="#home">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#contato">Pedido</a>
+      </nav>
+      <a class="btn order-btn" href="#contato">Encomendar</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Bolos artesanais feitos com amor</h1>
+          <p>Encomende bolos para aniversários, casamentos e eventos. Sabores clássicos e personalizados.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#produtos">Ver sabores</a>
+            <a class="btn outline" href="#contato">Fazer pedido</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://via.placeholder.com/600x400?text=Bolo+DoceSabor" alt="Bolo artesanal" />
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="about container">
+      <h2>Sobre nós</h2>
+      <p>DoceSabor é uma confeitaria artesanal especializada em bolos frescos e recheados. Trabalhamos com ingredientes selecionados e receitas caseiras para transformar sua celebração em um momento especial.</p>
+      <ul class="highlights">
+        <li>Receitas caseiras e ingredientes frescos</li>
+        <li>Encomendas para todo tipo de evento</li>
+        <li>Opções veganas e sem glúten (sob encomenda)</li>
+      </ul>
+    </section>
+
+    <section id="produtos" class="products container">
+      <h2>Sabores e modelos</h2>
+      <div class="product-grid">
+        <article class="product-card">
+          <img src="https://via.placeholder.com/400x300?text=Chocolate" alt="Bolo Chocolate" />
+          <h3>Bolo de Chocolate</h3>
+          <p>Recheio de ganache, cobertura de chocolate belga.</p>
+          <p class="price">A partir de R$ 70,00</p>
+        </article>
+
+        <article class="product-card">
+          <img src="https://via.placeholder.com/400x300?text=Baunilha" alt="Bolo Baunilha" />
+          <h3>Bolo de Baunilha</h3>
+          <p>Massa macia com creme de baunilha e frutas.</p>
+          <p class="price">A partir de R$ 65,00</p>
+        </article>
+
+        <article class="product-card">
+          <img src="https://via.placeholder.com/400x300?text=Red+Velvet" alt="Red Velvet" />
+          <h3>Red Velvet</h3>
+          <p>Clássico com cream cheese e decoração elegante.</p>
+          <p class="price">A partir de R$ 85,00</p>
+        </article>
+
+        <article class="product-card">
+          <img src="https://via.placeholder.com/400x300?text=Morango" alt="Bolo de Morango" />
+          <h3>Bolo de Morango</h3>
+          <p>Recheio com morangos frescos e chantilly.</p>
+          <p class="price">A partir de R$ 75,00</p>
+        </article>
+      </div>
+      <p class="note">Preços variam conforme tamanho, decoração e prazo. Solicite orçamento pelo formulário abaixo.</p>
+    </section>
+
+    <section id="contato" class="contact container">
+      <h2>Fazer pedido / Contato</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Como encomendar</h3>
+          <ol>
+            <li>Preencha o formulário ao lado com data, sabor e tamanho.</li>
+            <li>Aguarde nosso retorno por telefone ou e-mail para confirmar.</li>
+            <li>Pague e retire/receba na data combinada.</li>
+          </ol>
+          <p><strong>Telefone:</strong> (31) 9XXXX-XXXX</p>
+          <p><strong>E-mail:</strong> docesabor@exemplo.com</p>
+          <p><strong>Endereço:</strong> Rua das Receitas, 123 — Sua Cidade</p>
+        </div>
+
+        <form class="order-form" action="mailto:docesabor@exemplo.com" method="post" enctype="text/plain">
+          <label for="nome">Nome completo</label>
+          <input id="nome" name="Nome" type="text" required />
+
+          <label for="telefone">Telefone</label>
+          <input id="telefone" name="Telefone" type="tel" required />
+
+          <label for="sabor">Sabor / modelo</label>
+          <select id="sabor" name="Sabor" required>
+            <option value="">Escolha...</option>
+            <option>Chocolate</option>
+            <option>Baunilha</option>
+            <option>Red Velvet</option>
+            <option>Morango</option>
+            <option>Personalizado</option>
+          </select>
+
+          <label for="tamanho">Tamanho (pessoas)</label>
+          <input id="tamanho" name="Tamanho" type="number" min="1" placeholder="Ex: 12" required />
+
+          <label for="data">Data da retirada/entrega</label>
+          <input id="data" name="Data" type="date" required />
+
+          <label for="obs">Observações / decoração</label>
+          <textarea id="obs" name="Observações" rows="4"></textarea>
+
+          <button class="btn" type="submit">Enviar pedido por e-mail</button>
+          <p class="small">Também aceitamos pedido por WhatsApp: (31) 9XXXX-XXXX</p>
+        </form>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> DoceSabor — Todos os direitos reservados.</p>
+        <p class="socials">Siga: <a href="#">Instagram</a> • <a href="#">Facebook</a></p>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    // atualiza ano no rodapé
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
